@@ -4,8 +4,11 @@ So our goal was to write a piece of shellcode whose bytes where all prime number
 
 First of all, i went to <a href="http://ref.x86asm.net/coder64.html">this</a> website and wrote a piece of javascript to highlight all lines with prime opcodes.
 
-![highlighted-opcodes](opcodes.png)
-![highligted-opcodes2](opcodes2.png)
+<div>
+  <img src="opcodes.png" width="60%">
+  
+  <img src="opcodes2.png" width="40%">  
+</div>
 
 XOR, OR, AND , ADD, SUB, MOV, IMUL , ROT.
 
@@ -24,7 +27,7 @@ I decided that my strategy would be this one:
 2- Mov every dword to a location at the end of the prime-number-made-shellcode.
 
 Basically, we would do something like this, but using only prime numbers:
-
+<pre>
 MOV EAX, 0x1337000
 ADD EAX, SIZE_OF_THIS_SHELLCODE
 MOV EDI, EAX
@@ -35,7 +38,7 @@ MOV EAX, SECOND_DWORD_OF_THE_ACTUAL_SHELLCODE
 MOV [EDI], EAX
 INC EDI, 4
 [...]
-
+</pre>
 And we would do this until all dwords were placed at the end of the shellcode. So when we finish executing it, the program would execute our arbitrary code and we would get a shell.
 
 So, with that in mind i started making my set of instructions using python variables to store the opcodes inside representative names.
