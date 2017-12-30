@@ -1,4 +1,4 @@
-In this challange we recieved a binary called primes. After opening it on a disassembler we could quickly see that the binary was recieving a stream of bytes, writing them to executable memmory mapped at 0x1337000 and, if all bytes of the stream were primes, the execution would jump to that location.
+In this challange we recieved a binary called primepwn. After opening it on a disassembler we could quickly see that the binary was recieving a stream of bytes, writing them to executable memmory mapped at 0x1337000 and, if all bytes of the stream were primes, the execution would jump to that location.
 
 So our goal was to write a piece of shellcode whose bytes where all prime numbers.
 
