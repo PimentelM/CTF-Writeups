@@ -49,11 +49,11 @@ Assim teriamos nomes representativos com os quais poderiamos trabalhar.
 
 ![instructions](instructions.png)
 
-A parte mais tricky foi criar uma uma maneira de mover númeors arbitrários pra EAX. Mas a solução que encontrei foi bem legal, pois como tinhamos disponíveis OR e IMUL, eu resolvi usar essas operações para setar o número arbitrário bit por bit no registrador escolhido.
+A parte mais tricky foi criar uma uma maneira de mover números arbitrários pra EAX. Mas a solução que encontrei foi bem legal, pois como tinhamos disponíveis OR e IMUL, eu resolvi usar essas operações para setar o número arbitrário bit por bit no registrador escolhido.
 
 O processo basicamente consistiu em começar com o número 1 no registrador EDI, e ir movendo esse bit para o lado usando IMUL 2, daí toda vez que o bit fosse positivo no número, dariamos OR em EAX usando EDI.
 
-Quando tudo isso estava pronto eu construí a lógica dessas operações usando as instruções que foram criadas e tadam!! fomos capazs de executar shellcode arbitrário usando essa estratégia para mover os bytes até o final do payload!
+Quando tudo isso estava pronto eu construí a lógica dessas operações usando as instruções que foram criadas e tadam!! fomos capazes de executar shellcode arbitrário usando essa estratégia para mover os bytes até o final do payload!
 
 ![buildingloop](buildingloop.png)
 
