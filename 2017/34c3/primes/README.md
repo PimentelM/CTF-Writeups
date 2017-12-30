@@ -58,7 +58,7 @@ Then, when everything was done, i just made the shellcode, debugged it, and voil
 
 I will be postiong the final script as it is, without changes.
 
-This is why there is some portuguese text and the part of the shellcode where we addd the size of the payload is awkward.
+This is why there is some portuguese text and the part of the shellcode where we add the size of the payload is awkward.
 Awkward because there are a lot of ADD_EBX_BY(101) instructions used to sum up until a certaing number. But i could simply replace it by a MOV_EAX_DWORD(Any_Number) and then MOV_EBX_EAX.
 
 This is because as always happens in CTF, i got the flag before changing the awkward part of the code.
