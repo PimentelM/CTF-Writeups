@@ -50,7 +50,10 @@ The trickiest part was to make an arbitrary mov eax , value. But the solution i 
 The number was bit by bit set using bitwise and bitshift operations. ( i used imul edi, 2 to simulate a shl edi, 1 )
 
 Then, when everything was done, i just made the shellcode, debugged it, and voilà, we had arbitrary shellcode execution and got the flag! =]
-_________________________
+
+![success](success.png)
+
+
 
 
 I will be postiong the final script as it is, without changes, this is why there is some portuguese text and the "ADD EAX, SIZE_OF_THIS_SHELLCODE" part of the shellcode is awkward ( a lot of ADD_EBX_BY(101) instructions that i could replace by a single MOV_EAX_DWORD ; MOV_EBX_EAX . ). This is because as always happens in CTF, i got the flag before changing that code
