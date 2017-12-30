@@ -45,7 +45,7 @@ So, with that in mind i started making my set of instructions using python varia
 
 ![instructions](instructions.png)
 
-The trickiest part was to make an arbitrary mov eax , value. But the solution i came with was amazingly elegant imo =]
+The trickiest part was to make an arbitrary mov eax , value. But the solution i came with was amazingly cool imo =]
 
 The number was bit by bit set using bitwise and bitshift operations. ( i used imul edi, 2 to simulate a shl edi, 1 )
 
@@ -62,10 +62,3 @@ This is why there is some portuguese text and the part of the shellcode where we
 Awkward because there are a lot of ADD_EBX_BY(101) instructions used to sum up until a certaing number. But i could simply replace it by a MOV_EAX_DWORD(Any_Number) and then MOV_EBX_EAX.
 
 This is because as always happens in CTF, i got the flag before changing the awkward part of the code.
-
-
-
-
-
-
-
