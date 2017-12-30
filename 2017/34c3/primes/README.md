@@ -10,11 +10,11 @@ First of all, i went to <a href="http://ref.x86asm.net/coder64.html">this</a> we
   <img src="opcodes2.png" width="39%" style="display: inline">  
 </div>
 
-XOR, OR, AND , ADD, SUB, MOV, IMUL , ROT.
+We had a lot of usefull operations that happened to have prime opcodes: XOR, OR, AND , ADD, SUB, MOV, IMUL , ROT.
 
 And i also mapped all register opcodes that were primes: 
 
-![notepad](notepad.jpeg)
+![notepad](notepad.png)
 
 Then i started to create a strategy based on which operations we had avaliable.
 
