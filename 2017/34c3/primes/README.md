@@ -5,9 +5,9 @@ So our goal was to write a piece of shellcode whose bytes where all prime number
 First of all, i went to <a href="http://ref.x86asm.net/coder64.html">this</a> website and wrote a piece of javascript to highlight all lines with prime opcodes.
 
 <div>
-  <img src="opcodes.png" width="60%">
+  <img src="opcodes.png" width="50%" style="display: inline">
   
-  <img src="opcodes2.png" width="40%">  
+  <img src="opcodes2.png" width="45%" style="display: inline">  
 </div>
 
 XOR, OR, AND , ADD, SUB, MOV, IMUL , ROT.
