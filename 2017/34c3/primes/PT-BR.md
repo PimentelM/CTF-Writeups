@@ -54,7 +54,7 @@ Quando tudo isso estava pronto eu construí a lógica dessas operações usando 
 
 ![buildingloop](buildingloop.png)
 
-Tendo o /bin/sh executado, fomos capazes de obter acesso remoto ao servidor e ler o arquivo que armazava a flag! :D
+Tendo o /bin/sh executado, fomos capazes de obter acesso remoto ao servidor e ler o arquivo que armazenava a flag! :D
 
 ![success](success.png)
 
