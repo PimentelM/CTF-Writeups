@@ -50,11 +50,11 @@ The trickiest part was to make an arbitrary mov eax , value. But the solution i 
 
 The number was bit by bit set using bitwise and bitshift operations. ( i used imul edi, 2 to simulate a shl edi, 1 )
 
+![buildingloop](buildingloop.png)
+
 Then, when everything was done, i just made the shellcode, debugged it, and voilà, we had arbitrary shellcode execution and got the flag! =]
 
 ![success](success.png)
-
-
 
 
 I will be postiong the final script as it is, without changes.
