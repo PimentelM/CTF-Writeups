@@ -1,5 +1,5 @@
 <a href="https://github.com/PimentelM/CTF-Writeups/blob/master/2017/34c3/primes/README.md">EN-US</a><br>
-Nesse desafio, recebemos um binário chamado primepwn. Após abri-lo em um disasasembler foi possível perceber rapidamente que o binário recebia uma stream de bytes, escrevia eles em memória executável mapeada no address 0x1337000 e, se todos os bytes da stream fossem primos, a execussão iria saltar para o address onde eles foram escritos.
+Nesse desafio, recebemos um binário chamado primepwn. Após abri-lo em um disasasembler foi possível perceber rapidamente que o binário recebia uma stream de bytes, escrevia eles em memória executável mapeada no address 0x1337000 e, se todos os bytes da stream fossem primos, a execução iria saltar para o address onde eles foram escritos.
 
 ![disasm](disasm.png)
 
